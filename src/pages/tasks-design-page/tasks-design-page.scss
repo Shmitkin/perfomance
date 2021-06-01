@@ -1,0 +1,42 @@
+.tasks-desing {
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    & > span {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__tasks {
+    background-color: none;
+    border: 1px solid black;
+    height: 75vh;
+    overflow: auto;
+    padding: 20px;
+  }
+
+  &__tasks-list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tasks-list-item {
+    background-color: #fffadd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    & > p {
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+env:
+  es2020: true
+  browser: true
+  commonjs: true
+  jest: true
+
+parser: "babel-eslint"
+
+extends: ['airbnb']
+
+plugins: ['react-hooks']
+
+settings:
+  react:
+    version: '17'
+
+rules: {
+  "import/extensions": ['error', 'always', {ignorePackages: true} ],
+  quotes: ["error", "backtick"],
+  object-curly-spacing: ["error", "never"],
+  no-use-before-define: ["error", { "variables": false }],
+  no-console: ["warn", { allow: ["warn", "error"] }],
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  object-curly-newline: [
+    "error", 
+    { 
+      "ObjectPattern": { "multiline": false }, 
+      "ObjectExpression": { "multiline": true }, 
+      "ImportDeclaration": "never", "ExportDeclaration": "never" 
+    }
+  ],
+  no-prototype-builtins: "off",
+  max-len: ["error", { "code": 140 }],
+  "import/no-named-as-default": "off",
+  "jsx-a11y/label-has-associated-control": ["error", { assert: "either" } ],
+  "react-hooks/rules-of-hooks": "error",
+  "react-hooks/exhaustive-deps": "warn",
+}

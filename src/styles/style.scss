@@ -1,0 +1,108 @@
+@import './normalize.css';
+@import '../pages/tasks-page/tasks-page.scss';
+@import '../pages/sheduler-page/sheduler-page.scss';
+
+body {
+  background-color: #fff;
+  font-family:
+    'PT Sans Narrow',
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  min-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  align-items: center;
+  background-color: lightcoral;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  &__menu {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    max-width: 940px;
+    min-width: 600px;
+  }
+
+  &__menu-item {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    min-width: 150px;
+    padding: 10px;
+  }
+
+  &__autorization-button {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 10px;
+    width: 180px;
+  }
+}
+
+.monitoring-area {
+  align-items: center;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  grid-area: monitoring-area;
+  padding: 20px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__mock-graph {
+    align-items: center;
+    background-color: lightskyblue;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+
+    &:last-child {
+      background-color: rgb(58, 133, 180);
+      margin-bottom: 0;
+    }
+  }
+}

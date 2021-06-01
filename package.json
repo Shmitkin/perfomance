@@ -1,0 +1,65 @@
+{
+  "name": "dks-sheduler",
+  "version": "1.0.0",
+  "description": "empty readme",
+  "scripts": {
+    "eslint": "eslint --ext .jsx --ext .js src/",
+    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack serve --config webpack.config.dev.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
+    "stylelint": "stylelint **/*.scss"
+  },
+  "dependencies": {
+    "connected-react-router": "6.8.0",
+    "history": "4.10.1",
+    "moment": "2.29.1",
+    "randomcolor": "0.6.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "redux": "4.0.5",
+    "redux-devtools-extension": "2.13.8",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.1",
+    "eslint": "7.15.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.3",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "gh-pages": "3.1.0",
+    "mini-css-extract-plugin": "1.3.3",
+    "node-sass": "5.0.0",
+    "sass-loader": "10.1.0",
+    "style-loader": "2.0.0",
+    "stylelint": "13.8.0",
+    "stylelint-config-sass-guidelines": "7.1.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.1.0",
+    "terser-webpack-plugin": "5.0.3",
+    "webpack": "5.10.3",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shmitkin/dks-sheduler.git"
+  },
+  "author": "Mitkin Oleg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shmitkin/dks-sheduler/issues"
+  },
+  "homepage": "https://github.com/Shmitkin/dks-sheduler#readme"
+}
